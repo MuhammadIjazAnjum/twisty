@@ -1,0 +1,17 @@
+/*REQUIRED CSS*/
+.aligncenter{
+	text-align: center;
+}
+ .sticky{
+ 	background-color: #123;
+ }
+ .screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+.bypostauthor{
+	background-color: #123;
+}
