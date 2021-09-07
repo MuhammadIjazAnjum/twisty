@@ -8,13 +8,13 @@
 <body  <?php body_class( ); ?> >
 	<?php wp_body_open(); ?>
 	<!-- nav -->
-	<div id="nav" style="background-image:url(<?php echo get_header_image() ?>);" >
+	<div id="nav" style=";" >
 		<!-- div site title and site description -->
 		<div class="row" >
-			<div class="col-lg-3" >
+			<div class="col-lg-2" >
 				<?php if ( has_custom_logo() ) { the_custom_logo();} ?>
 			</div>
-			<div class="col-lg-3" >
+			<div class="col-lg-4" >
 				<div class="site-title" > 
 		    	<a  id="twisty-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		     		<?php echo esc_html(get_bloginfo( 'name' )); ?>

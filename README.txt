@@ -6,8 +6,6 @@ DESCRIPTION:
 		User friendly and informal theme to display blogs in twisty layout with different size.  
 TAGS:
 	custom-menu, custom-logo, editor-style, featured-images,  flexible-header, theme-options
-	
-
 
 IMAGES:
 	Designed and captured by bitwali
@@ -46,9 +44,9 @@ ROADMAP
 == Changelog == 
 	VERSION : 2.1.9
 		.	Released: , 2021
-		.	included licence 
-		.	updated Readme 
-		.	Fixed issues of : Prefixing, tranlation	
+		.	Added selection options for flipbox 
+		.	 
+		.		
 		
 	VERSION : 2.1.8
 		.	Released: August 21, 2021
@@ -98,5 +96,5 @@ Code from zigzage
 Copyright (c) 2018-2021 WordPress.org
 License: GPLv2
 
-
+ 
 Underscores

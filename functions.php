@@ -2,14 +2,14 @@
 
 function twisty_theme_support(){
 	// Set the default content width.
-    if ( ! isset( $content_width ) ) {
-        $GLOBALS['content_width'] = 900;
-    } 
-    load_theme_textdomain('twisty', get_template_directory() . '/lang');
+    // if ( ! isset( $content_width ) ) {
+    //     $GLOBALS['content_width'] = 900;
+    // } 
+    
+    // load_theme_textdomain('twisty', get_template_directory() . '/lang');
+    
     //sroll for cusomizer and frontpage
-    if ( is_customize_preview() ) {
-            echo '<style> .wrapper{  margin-top:520px;  } </style>';
-        }
+    
 
     // Enable support for Customer background.
      $args = array(
@@ -147,22 +147,21 @@ function twisty_block_pattern() {
         ) );
     }
 }
-add_action( 'init', 'twisty_block_pattern' );
+ add_action( 'init', 'twisty_block_pattern' );
 
 function twisty_styles_scripts() {
 	wp_enqueue_style( 'twisty-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'twisty-required', get_template_directory_uri().'/css/required.css' );
-  wp_enqueue_style( 'twisty-bootstarp-min', get_template_directory_uri().'/css/bootstrap.min.css' );
-  wp_enqueue_style( 'twisty-bootstarp', get_template_directory_uri().'/css/bootstrap.css' );
-  wp_enqueue_style( 'twisty-awesome', get_template_directory_uri().'/css/font-awesome.css' );
+    wp_enqueue_style( 'twisty-bootstarp-min', get_template_directory_uri().'/css/bootstrap.min.css' );
+    wp_enqueue_style( 'twisty-bootstarp', get_template_directory_uri().'/css/bootstrap.css' );
+    wp_enqueue_style( 'twisty-awesome', get_template_directory_uri().'/css/font-awesome.css' );
  	wp_enqueue_style( 'twisty-animation', get_template_directory_uri().'/css/animate.css' );
-  wp_enqueue_script( 'twisty-scroll', get_template_directory_uri().'/css/scroll.js' );
-  require get_template_directory(). '/inc/default-css.php';
-
+    wp_enqueue_script( 'twisty-scroll', get_template_directory_uri().'/css/scroll.js' );
+   require get_template_directory(). '/inc/default-css.php';
+  
 }
 add_action( 'wp_enqueue_scripts', 'twisty_styles_scripts' );
-  require get_template_directory()  . '/inc/comment-functions.php' ;
-  // Add Customizer Functionality
-  require get_template_directory(). '/inc/customizer.php';
-  // Team Customization 
-  require get_template_directory(). '/inc/twisty-team-customizer.php';
+    require get_template_directory()  . '/inc/comment-functions.php' ;
+    // Add Customizer Functionality
+    require get_template_directory(). '/inc/customizer.php';
+  

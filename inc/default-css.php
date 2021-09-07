@@ -1,3 +1,4 @@
+
 <style>
 	*{
 			box-sizing: border-box;
@@ -7,10 +8,10 @@
 	  /*padding:0;*/
 	  font-family: Arial, Helvetica, sans-serif;
 	}
-	<?php if (is_front_page()): ?>
-		
-	<?php endif ?>
-
+	
+div#nav{
+	background-image:url(<?php echo get_header_image() ?>);
+}
 	.wrapper{
 		margin-top:340px;
 	}
@@ -326,12 +327,17 @@
   color: white;
   transform: rotateX(180deg);
 }
+.flip-box-front img{
+	width:300px;
+	height:200px
+}
 /*Odd Even Post Background - Color*/
 .odd-bg-color{
+	background-color: #fff;
 	/*background-color: #00d;*/
 }
 .even-bg-color{
-	background-color: #ffe;
+	/*background-color: #ffe;*/
 }
 /*CAT TAGS DATE*/
 .entry-heading a{
